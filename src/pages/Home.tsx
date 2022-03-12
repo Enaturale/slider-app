@@ -13,7 +13,7 @@ import { Navigation } from "swiper";
 
 
 const Home: React.FC = () => {  
-  const swiper = useSwiper();
+  //const swiper = useSwiper();
   //array for data to be used
   const data =[
     {
@@ -60,11 +60,10 @@ const Home: React.FC = () => {
          })}
 
          <SwiperSlide>
-           <IonButton routerLink="/welcome">Get STARTED</IonButton>
+           <div className='btnStart'>
+              <IonButton routerLink="/welcome">Get STARTED</IonButton>
+           </div>
          </SwiperSlide>
-
-
-
       </Swiper>
       
          {/* {data.map((card, index) => {
